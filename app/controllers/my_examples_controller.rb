@@ -4,4 +4,8 @@ class MyExamplesController < ApplicationController
     random_integer = rand(0..2)
     render json: fortunes[random_integer]
   end
+
+  def lotto_generator
+    render json: {message: "hello"}
+  end
 end
