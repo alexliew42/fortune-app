@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   get "/lotto_winner", controller: "my_examples", action: "lotto_generator"
 
+  get "/impossible_challange", controller: "my_examples", action: "add_visit"
+
   # Defines the root path route ("/")
   # root "articles#index"
 end
