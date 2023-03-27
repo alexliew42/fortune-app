@@ -1,5 +1,7 @@
 class MyExamplesController < ApplicationController
   def random_fortune
-    render json: {message: "print random fortune"}
+    fortunes = ["You will live a happy life", "You will be visited by a spirit later today", "This year will be a challenge for you"]
+    random_integer = rand(0..2)
+    render json: fortunes[random_integer]
   end
 end
