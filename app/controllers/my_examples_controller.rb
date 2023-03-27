@@ -13,10 +13,14 @@ class MyExamplesController < ApplicationController
     render json: {"These are the winning numbers:" => array}
   end
 
-  def add_visit
-    dict = {visits: 1}
-    render json: dict
-    dict[visits] += 1
+  # def add_visit
+  #   dict = {visits: 1}
+  #   render json: dict
+  #   dict[visits] += 1
+  # end
+
+  def print_bottles
+    
   end
 end
 

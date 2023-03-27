@@ -4,7 +4,9 @@ Rails.application.routes.draw do
 
   get "/lotto_winner", controller: "my_examples", action: "lotto_generator"
 
-  get "/impossible_challange", controller: "my_examples", action: "add_visit"
+  # get "/impossible_challange", controller: "my_examples", action: "add_visit"
+
+  get "/99bottles_of_beer", controller: "my_examples", action: "print_bottles"
 
   # Defines the root path route ("/")
   # root "articles#index"
