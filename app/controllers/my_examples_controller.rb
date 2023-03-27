@@ -6,6 +6,12 @@ class MyExamplesController < ApplicationController
   end
 
   def lotto_generator
-    render json: {message: "hello"}
+    array = []
+    6.times do
+      array << rand(0..60)
+    end
+    render json: {"These are the winning numbers:" => array}
   end
 end
+
+
